@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belgrano&display=swap');
+
+.nav-item {
+  @apply cursor-pointer text-xl font-light font-sans flex justify-end;
+}
+
+.scroller {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.scroller {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.page {
+  scroll-snap-align: start;
+}
+
+.transition {
+  transition: opacity 1s ease;
+  transition: display 0 ease 1s;
+}
+
+.bg-clip-text {
+  background-clip: text;
+-webkit-background-clip: text;
+}
