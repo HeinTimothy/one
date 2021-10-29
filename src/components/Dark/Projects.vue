@@ -27,12 +27,10 @@
             <div class="m-2 cursor-pointer">
               <Icon :icon="['fas', 'arrow-left']" @click="scrollLeft" />
             </div>
-            <div class="m-2 cursor-pointer" v-if="account == me">
-              <div>
-                <Icon :icon="['fas', 'plus']" @click="startUpload" />
-              </div>
+            <div class="m-2 cursor-pointer" v-if="owner">
+              <Icon :icon="['fas', 'plus']" @click="startUpload" />
             </div>
-            <div class="m-2 cursor-pointer" v-if="account == me">
+            <div class="m-2 cursor-pointer" v-if="owner">
                 <Icon :icon="['fas', 'trash-alt']" @click="burn" />
             </div>
             <div class="m-2 cursor-pointer">
@@ -74,6 +72,7 @@ export default Vue.extend({
     return {
       selected: 0,
       brewing: false,
+      owner: false,
       //new token fields
       uri: "",
     }
@@ -82,6 +81,8 @@ export default Vue.extend({
     account: function() {
       console.log(this.me);
       console.log(this.account);
+      this.owner = this.me == this.account;
+      console.log(this.owner);
     }
   },
   computed: {
@@ -89,7 +90,7 @@ export default Vue.extend({
       return this.$store.getters['crypto/getMe'];
     },
     account: function() {
-      return this.$store.getters['crypto/getAccount']
+      return this.$store.getters['crypto/getAccount'];
     },
     tokens: function() {
       return Object.values(this.$store.getters['crypto/getTokens']);
