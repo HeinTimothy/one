@@ -11,9 +11,6 @@
     <div class="nav-item" @click="navigate('projects')">
       Projects
     </div>
-    <div class="nav-item" @click="navigate('interests')">
-      Interests
-    </div>
     <!--
     <div class="nav-item">
       Notion
@@ -39,7 +36,7 @@ export default Vue.extend({
         return this.$store.getters['application/getMode']
       },
       set(newMode) {
-        this.$store.dispatch('application/setMode', newMode)
+        this.$store.dispatch('application/setMode', newMode ? 'dark' : 'light');
       }
     }
   }

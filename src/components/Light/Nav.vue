@@ -38,7 +38,7 @@ export default Vue.extend({
         return this.$store.getters['application/getMode']
       },
       set(newMode) {
-        this.$store.dispatch('application/setMode', newMode)
+        this.$store.dispatch('application/setMode', newMode ? 'dark' : 'light');
       }
     }
   }

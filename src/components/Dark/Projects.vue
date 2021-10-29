@@ -77,15 +77,6 @@ export default Vue.extend({
       uri: "",
     }
   },
-  watch: {
-    account: function() {
-      console.log(this.me);
-      console.log(this.account);
-      console.log(this.me == this.account);
-      this.owner = this.me == this.account;
-      console.log(this.owner);
-    }
-  },
   computed: {
     me: function() {
       return this.$store.getters['crypto/getMe'];
