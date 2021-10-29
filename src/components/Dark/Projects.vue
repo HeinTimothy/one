@@ -33,13 +33,6 @@
             <div class="m-2 cursor-pointer" v-if="account == me">
               <div>
                 <Icon :icon="['fas', 'plus']" @click="startUpload" />
-                <input
-                  class="hidden"
-                  ref="fileUpload"
-                  type="file"
-                  accept="image/png, image/jpeg"
-                  @change="uploadFile"
-                />
               </div>
             </div>
             <div class="m-2 cursor-pointer" v-if="account == me">
@@ -51,21 +44,14 @@
           </div>
           <!-- Main view -->
           <div class="flex-1">
-            <div class="flex flex-col items-center" v-if="brewing">
-              <img :src="imageURL" class="img-w img-h object-cover object-center" alt="">
+            <div class="flex flex-col items-center img-h" v-if="brewing">
               <input
                 type="text"
-                v-model="name"
-                class="rounded px-2 mt-2 outline-none img-w bg-moon text-night"
-                placeholder="name"
-              >
-              <textarea
-                v-model="description"
+                v-model="uri"
                 class="rounded px-2 my-2 outline-none img-w bg-moon text-night"
-                rows="2"
-                placeholder="description"
-              ></textarea>
-              <div class="inline-block rounded px-2 bg-moon text-night cursor-pointer" @click="mint">
+                placeholder="URI"
+              >
+              <div class="inline-block text-xl rounded px-2 bg-moon text-night cursor-pointer" @click="mint">
                 submit
               </div>
             </div>
@@ -92,10 +78,7 @@ export default Vue.extend({
       selected: 0,
       brewing: false,
       //new token fields
-      image: null,
-      imageURL: null,
-      name: "",
-      description: "",
+      uri: "",
     }
   },
   computed: {
@@ -126,26 +109,12 @@ export default Vue.extend({
 
     //Managing NFTS
     startUpload: function() {
-      if(this.$refs['fileUpload'] != null) {
-        console.log(this.$refs['fileUpload']);
-        this.$refs['fileUpload'].click();
-      }
-    },
-
-    uploadFile: async function(e) {
-      console.log(e);
-      this.image = e.target.files[0];
-      this.imageURL = URL.createObjectURL(this.image)
       this.brewing = true;
     },
 
     mint: async function() {
       if(this.name.length > 0 && this.description.length > 0) {
-        this.$store.dispatch('crypto/brewToken', {
-          name: this.name,
-          description: this.description,
-          image: this.image,
-        });
+        this.$store.dispatch('crypto/brewToken', this.uri);
         this.brewing = false;
         this.image = null;
         this.imageURL = null;
