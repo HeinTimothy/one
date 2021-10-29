@@ -10,16 +10,13 @@
         <!-- Images go here -->
         <div class="flex flex-col items-stretch">
           <div class="flex flex-row justify-center">
-            <div class="m-2 whitespace-nowrap overflow-hidden overflow-ellipsis">
+            <div class="m-2 whitespace-nowrap overflow-hidden overflow-ellipsis" @click="connect">
               Tea Room
             </div>
             <div class="flex-1"> </div>
             <div class="flex items-center">
-              <div v-if="account == null" class="border border-moon px-2 rounded cursor-pointer hover:bg-moon hover:text-gray" @click="connect">
-                connect
-              </div>
               <div
-                v-else
+                v-if="account != null"
                 class="text-amber-500 bg-amber-ghost px-2 rounded overflow-hidden overflow-ellipsis"
                 :style="{ 'max-width': '160px' }"
               >
@@ -103,8 +100,9 @@ export default Vue.extend({
     },
 
     //Web3
-    connect: function() {
-      this.$store.dispatch('crypto/connect');
+    connect: async function() {
+      const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+      this.$store.dispatch('crypto/connect', accounts[0]);
     },
 
     //Managing NFTS

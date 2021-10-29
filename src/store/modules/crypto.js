@@ -170,12 +170,10 @@ const actions = {
   },
 
   //accounts
-  async connect ({ commit, state }) {
+  async connect ({ commit, state }, account) {
     try {
       //get accounts
-      const accounts = await state.web3.eth.getAccounts();
-      console.log(accounts);
-      commit('connect', accounts[0]);
+      commit('connect', account);
       console.log("Connected");
     } catch (error) {
       console.error("Could not connect to contract or chain");
