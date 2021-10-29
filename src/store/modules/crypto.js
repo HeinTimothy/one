@@ -170,7 +170,7 @@ const actions = {
   },
 
   //accounts
-  async connect ({ commit, state }, account) {
+  async connect ({ commit }, account) {
     try {
       //get accounts
       commit('connect', account);

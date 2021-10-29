@@ -10,7 +10,7 @@
         <!-- Images go here -->
         <div class="flex flex-col items-stretch">
           <div class="flex flex-row justify-center">
-            <div class="m-2 whitespace-nowrap overflow-hidden overflow-ellipsis" @click="connect">
+            <div class="m-2 whitespace-nowrap overflow-hidden overflow-ellipsis cursor-pointer" @click="connect">
               Tea Room
             </div>
             <div class="flex-1"> </div>
@@ -76,6 +76,12 @@ export default Vue.extend({
       brewing: false,
       //new token fields
       uri: "",
+    }
+  },
+  watch: {
+    account: function() {
+      console.log(this.me);
+      console.log(this.account);
     }
   },
   computed: {
