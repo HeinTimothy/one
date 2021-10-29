@@ -10,7 +10,7 @@ const state = () => ({
   account: null,
   //web3 stuff
   client: null,
-  liltimmy: "0x26910dc0106A326b6bbd84AD3df554aeA0E13524",
+  liltimmy: "0x26910dc0106a326b6bbd84ad3df554aea0e13524",
   web3: null,
   networkId: null,
   deployedNetwork: null,

@@ -27,10 +27,10 @@
             <div class="m-2 cursor-pointer">
               <Icon :icon="['fas', 'arrow-left']" @click="scrollLeft" />
             </div>
-            <div class="m-2 cursor-pointer" v-if="owner">
+            <div class="m-2 cursor-pointer" v-if="this.me == this.account">
               <Icon :icon="['fas', 'plus']" @click="startUpload" />
             </div>
-            <div class="m-2 cursor-pointer" v-if="owner">
+            <div class="m-2 cursor-pointer" v-if="this.me == this.account">
                 <Icon :icon="['fas', 'trash-alt']" @click="burn" />
             </div>
             <div class="m-2 cursor-pointer">
@@ -81,6 +81,7 @@ export default Vue.extend({
     account: function() {
       console.log(this.me);
       console.log(this.account);
+      console.log(this.me == this.account);
       this.owner = this.me == this.account;
       console.log(this.owner);
     }
