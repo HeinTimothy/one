@@ -19,3 +19,11 @@ new Vue({
   store,
   render: h => h(App),
 }).$mount('#app')
+
+/**
+ * TO PUSH TO GITHUB
+ * npm run build
+ * git add .
+ * git commit -m "..."
+ * git subtree push --prefix dist origin gh-pages
+**/

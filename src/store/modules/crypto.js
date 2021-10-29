@@ -174,6 +174,7 @@ const actions = {
     try {
       //get accounts
       const accounts = await state.web3.eth.getAccounts();
+      console.log(accounts);
       commit('connect', accounts[0]);
       console.log("Connected");
     } catch (error) {
