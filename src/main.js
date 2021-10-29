@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import App from './App.vue';
 import store from './store/index.js';
-import './styles.css';
+//import './styles.css';
 
 //font awesome
 import { library } from '@fortawesome/fontawesome-svg-core'

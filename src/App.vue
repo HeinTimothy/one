@@ -35,4 +35,5 @@ export default Vue.extend({
 </script>
 
 <style lang="css">
+@import './styles.css';
 </style>
