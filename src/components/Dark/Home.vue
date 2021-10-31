@@ -19,10 +19,10 @@
 
         <div class="text-lg pl-4">
           🏗️ building a workspace for people who work with people
-          <span class="underline italic bold cursor-pointer" href="https://kryx.co">@ kryx.co</span>
+          <a class="underline italic bold cursor-pointer" href="https://kryx.co">@ kryx.co</a>
           <br>
           🚀 supporting student startups with
-          <span class="underline italic bold cursor-pointer" href="https://www.anvilstartups.com/">The Anvil</span>
+          <a class="underline italic bold cursor-pointer" href="https://www.anvilstartups.com/">The Anvil</a>
           <br>
           🎨 exploring <span class="underline italic bold cursor-pointer">art & 3D modeling.</span>
           <br>
