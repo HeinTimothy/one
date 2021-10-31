@@ -51,7 +51,7 @@
               </div>
             </div>
             <div class="" v-else>
-              <img v-if="tokens.length > 0" :src="tokens[view].image" class="img-dimenstions object-cover object-center mx-auto" alt=""/>
+              <img v-if="tokens.length > 0" :src="tokens[selected].image" class="img-w img-h object-cover object-center mx-auto" alt=""/>
               <div v-else class="img-h">
 
               </div>
@@ -75,6 +75,11 @@ export default Vue.extend({
       owner: false,
       //new token fields
       uri: "",
+    }
+  },
+  watch: {
+    tokens: function(tokens) {
+      console.log(tokens);
     }
   },
   computed: {
@@ -110,13 +115,9 @@ export default Vue.extend({
     },
 
     mint: async function() {
-      if(this.name.length > 0 && this.description.length > 0) {
+      if(this.uri.length > 0) {
         this.$store.dispatch('crypto/brewToken', this.uri);
         this.brewing = false;
-        this.image = null;
-        this.imageURL = null;
-        this.name = "";
-        this.description = "";
       }
     },
 

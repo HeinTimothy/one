@@ -4,20 +4,21 @@
       <input type="checkbox" v-model="mode">
       <span class="slider round"></span>
     </label>
-    <div></div>
     <div class="nav-item" @click="navigate('home')">
       Home
     </div>
+    <!--
     <div class="nav-item" @click="navigate('projects')">
       Projects
     </div>
+    -->
     <!--
     <div class="nav-item">
       Notion
     </div>
     -->
-    <div></div>
-    <div></div>
+    <div> </div>
+    <div> </div>
   </div>
 </template>
 
@@ -33,7 +34,7 @@ export default Vue.extend({
   computed: {
     mode: {
       get () {
-        return this.$store.getters['application/getMode']
+        return this.$store.getters['application/getMode'] == 'dark'
       },
       set(newMode) {
         this.$store.dispatch('application/setMode', newMode ? 'dark' : 'light');

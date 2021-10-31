@@ -4,21 +4,21 @@
       <div class="w-content flex flex-col">
         <h1 class="font-thin font-sans text-5xl mb-7">Hi! my name is Timmy 👋</h1>
 
-        <div class="">
+        <div class="my-1">
           I'm building a workspace for communication <a class="font-bold" href="https://kryx.co">@kryx.co</a>.
         </div>
 
-        <div class="">
+        <div class="my-1">
+          Communmity building
+          <a class="font-bold" href="https://www.anvilstartups.com/">@The Anvil</a>,
+          Purdue's hub for students building dope sh*t
+        </div>
+        <div class="my-1"> </div>
+        <div class="my-1">
           Vibing between Purdue and San Francisco
         </div>
-        <div class="mt-7 flex flex-row items-center">
-          <div class="pr-3">
-            Exploring the future
-          </div>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
+        <div class="my-1">
+          Come say hi on <a href="https://twitter.com/talltimofficial">twitter</a> :)
         </div>
 
       </div>
