@@ -21,10 +21,8 @@
           🏗️ building a workspace for people who work with people
           <a class="underline italic bold cursor-pointer" href="https://kryx.co">@ kryx.co</a>
           <br>
-          🚀 supporting student startups with
-          <a class="underline italic bold cursor-pointer" href="https://www.anvilstartups.com/">The Anvil</a>
-          <br>
-          🎨 exploring <span class="underline italic bold cursor-pointer">art & 3D modeling.</span>
+          🎨 exploring web3
+          <a class="underline italic bold cursor-pointer" href="https://twitter.com/developer_dao">@ developer dao</a>
           <br>
         </div>
 

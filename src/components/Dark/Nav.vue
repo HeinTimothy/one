@@ -64,7 +64,7 @@ export default Vue.extend({
 
 /* The slider */
 .slider {
-  @apply bg-gradient-to-r from-fuchsia-500 to-amber-400 via-purple-400;
+  @apply bg-light;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -89,11 +89,11 @@ export default Vue.extend({
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #fff;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #fff;
 }
 
 input:checked + .slider:before {

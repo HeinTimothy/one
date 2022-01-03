@@ -4,21 +4,15 @@
       <div class="w-content flex flex-col">
         <h1 class="font-thin font-sans text-5xl mb-7">Hi! my name is Timmy 👋</h1>
 
-        <div class="my-1">
-          I'm building a workspace for communication <a class="font-bold" href="https://kryx.co">@kryx.co</a>.
+        <div class="">
+          I'm a community builder and product designer based in SF 🌉
         </div>
 
         <div class="my-1">
-          Communmity building
-          <a class="font-bold" href="https://www.anvilstartups.com/">@The Anvil</a>,
-          Purdue's hub for students building dope sh*t
-        </div>
-        <div class="my-1"> </div>
-        <div class="my-1">
-          Vibing between Purdue and San Francisco
+          creating the future of work <a class="font-bold" href="https://kryx.co">@kryx.co</a>, a workspace for people who work with people.
         </div>
         <div class="my-1">
-          Come say hi on <a href="https://twitter.com/talltimofficial">twitter</a> :)
+          Come say hi on <a class="font-bold" href="https://twitter.com/talltimofficial">twitter</a> :) or check out more below 👇
         </div>
 
       </div>

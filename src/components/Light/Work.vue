@@ -5,16 +5,6 @@
         <div class="font-thin font-sans text-5xl mb-7">My Experience</div>
         <div class="mt-4">
           <div class="text-xl relative">
-            <span class="font-bold">Purdue University</span> - <span class="font-light italic">Comupter Engineering & Philosophy</span>
-            <div class="float-right text-sm pr-2">
-              class 2024
-            </div>
-          </div>
-          <div class="font-light">Community <a href="https://www.anvilstartups.com/" class="underline italic">@ The Anvil</a> : Purdue's student run startup accelerator</div>
-          <div class="font-light">Experience Executive <a href="https://boilermake.org/" class="underline italic">@ Boilermake</a> : Purdue's premier hackathon</div>
-        </div>
-        <div class="mt-4">
-          <div class="text-xl relative">
             <a href="https://kryx.co" class="font-bold">Keryx</a> - <span class="font-light italic">Co-Founder</span>
             <div class="float-right text-sm pr-2">
               June 2021
@@ -38,6 +28,16 @@
           </div>
         </div>
         <div class="mt-4">
+          <div class="text-xl relative">
+            <span class="font-bold">Purdue University</span> - <span class="font-light italic">Comupter Engineering & Philosophy</span>
+            <div class="float-right text-sm pr-2">
+              class 2024
+            </div>
+          </div>
+          <div class="font-light">Community <a href="https://www.anvilstartups.com/" class="underline italic">@ The Anvil</a> : Purdue's student run startup accelerator</div>
+          <div class="font-light">Experience Executive <a href="https://boilermake.org/" class="underline italic">@ Boilermake</a> : Purdue's premier hackathon</div>
+        </div>
+        <div class="mt-4">
           <div class="text-xl">
             <a href="https://genzscouts.com/" class="font-bold">Gen Z Scouts</a> - <span class="font-light italic">Fellow</span>
             <div class="float-right text-sm pr-2">
@@ -47,9 +47,9 @@
         </div>
       </div>
       <div class="flex-grow">
-        <img id="purdue" src="@/assets/purdue.png" alt="Purdue University" class="object-contain relative"/>
         <img id="keryx" src="@/assets/keryx.svg" alt="Keryx" class="object-contain h-36 relative"/>
         <img id="roble" src="@/assets/roble-ventures.png" alt="Roble Ventures" class="object-contain h-36 relative"/>
+        <img id="purdue" src="@/assets/purdue.png" alt="Purdue University" class="object-contain relative"/>
       </div>
     </div>
   </div>
@@ -65,21 +65,23 @@ export default Vue.extend({
 <style lang="css" scoped>
 
 #purdue {
-  left: 10%;
-  height: 9rem;
+  bottom: 2rem;
+  left: 20%;
+  height: 8rem;
 }
 
 #keryx {
-  bottom: 2rem;
-  right: 10%;
+  left: 10%;
   height: 12rem;
-  margin-left: auto;
 }
 
 #roble {
-  bottom: 4rem;
-  left: 20%;
-  height: 10rem;
+  bottom: 2rem;
+  right: 0;
+  height: 12rem;
+  margin-left: auto;
+
+
 }
 
 </style>

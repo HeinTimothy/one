@@ -5,16 +5,16 @@
         <h1 class="font-thin font-sans text-5xl mb-7">A little about me...</h1>
 
         <div class="font-light my-2">
-          I love learning.
-          Right now I'm learning how to make beautiful renders on blender.
-          Often you can also find me reading a book or taking on small side projects.
+          I dropped out my sophmore year because classes started and I found I learned a lot more building than I did in school.
+          Now I work full time on Keryx and spend my weekends making up for lost education hacking, reading, sketching.
         </div>
         <div class="font-light my-2">
-          Outside of work you can often catch me on my skateboard praciticing tricks or just riding around.<br>
-          or, if it's earier in the morning, sipping tea with homies 🍵
+          Outside of work you can catch me making coffee or skating down the embarcadero (☕, 🛹).
+          Also always down to talk about dope shit: web3, architecture, fruit trees;
+          there's merit in pondering any topic as long as you come looking for beauty
         </div>
         <div class="font-light my-2">
-          
+
         </div>
 
       </div>
