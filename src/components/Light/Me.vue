@@ -5,13 +5,14 @@
         <h1 class="font-thin font-sans text-5xl mb-7">A little about me...</h1>
 
         <div class="font-light my-2">
-          I dropped out my sophmore year because classes started and I found I learned a lot more building than I did in school.
-          Now I work full time on Keryx and spend my weekends making up for lost education hacking, reading, sketching.
+          I dropped out my sophmore year because classes started and I realized I was learning so much more outside of lecture halls than in them.
+          I have an intersting mix of professional experience where I've both built a handlful and web (and some web3) apps and
+          spent a great deal of time studying the future of work & writing 'fantasy' investment memos on the companies I think will make it.
+          I've never made noise about the things I build so to launch our waitlist I decided to start <a class="font-bold hover:underline" href="https://twitter.com/talltimofficial">building in public</a> on twitter.
         </div>
         <div class="font-light my-2">
-          Outside of work you can catch me making coffee or skating down the embarcadero (☕, 🛹).
-          Also always down to talk about dope shit: web3, architecture, fruit trees;
-          there's merit in pondering any topic as long as you come looking for beauty
+          Outside of work I have a love of coffee, skateboarding, and San Francisco 🌉.
+          You can sometimes catch me at web3 events but you'll most often find me in sketching figma.
         </div>
         <div class="font-light my-2">
 
@@ -23,46 +24,6 @@
       </div>
     </div>
   </div>
-  <!--
-  <div class="flex flex-col page">
-    <div class="flex flex-row pb-1/12 items-stretch flex-grow h-full relative">
-      <img src="@/assets/profile.jpg" alt="Timothy Hein" class="object-cover object-center rounded-md h-1/2 my-auto"/>
-      <div class="mx-5 flex flex-col flex-nowrap">
-        <div class="flex-grow"></div>
-        <h3 class="text-2xl font-normal">A little about me...</h3>
-        <p class="font-light">
-          I was born in San Francisco and raised just outside silicon valley.
-          Growing up I was exposed to CS early, building my first computer in elementary school
-          and slowly continuing to expand my understanding of software and it's applications.
-          In addition to computer science I was an avid swimmer, played rugby, and lead brass in my jazz band.
-          Coming out of high school I was fortunate to study at Yale for a summer
-          where I was exposed to many different cultures and grew to understand my own.
-          To give back to the community my final year in school,
-          I took the high position in boy scouts and lead my troop of ~150+ through one of our most active six months.
-        </p>
-        <br />
-        <p class="font-light">
-          I've gone on to study computer engineering at Purdue, continuing my experiences at Roble by taking on roles of responsability in our startup & accelerator ecosystem.
-          A majority of my time is taken up by my own company with the rest split between learning and student groups.
-        </p>
-        <br />
-        <p class="font-semibold">
-          I always make the bandwidth to talk to other builders so if you're working on something: reach out!
-          I'd love to hear about it and see what I can do.
-        </p>
-        <br />
-        <p class="font-semibold">
-          If you're not building I request a twitter DM with a book reccomendation. Cookbooks to philosophy, send me anything.
-        </p>
-        <div class="flex-grow"></div>
-      </div>
-      <div class="absolute left-0 right-0 bottom-1/12 text-center flex flex-row justify-around text-4xl px-1/5">
-        <a href="https://twitter.com/talltimofficial"><Icon :icon="['fab', 'twitter']" /></a>
-        <a href="https://t.me/talltimofficial"><Icon :icon="['fab', 'telegram']" /></a>
-      </div>
-    </div>
-  </div>
--->
 </template>
 
 <script>

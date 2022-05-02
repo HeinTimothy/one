@@ -5,14 +5,13 @@
         <div class="font-thin font-sans text-5xl mb-7">My Experience</div>
         <div class="mt-4">
           <div class="text-xl relative">
-            <a href="https://kryx.co" class="font-bold">Keryx</a> - <span class="font-light italic">Co-Founder</span>
+            <a href="https://tryvelocity.xyz" class="font-bold">Velocity</a> - <span class="font-light italic">Co-Founder</span>
             <div class="float-right text-sm pr-2">
-              June 2021
+              January 2022
             </div>
           </div>
           <div class="font-light">
-            Building a workspace for deal based business to manage emails, calendar, and document sharing.
-            Responsible for product management and front end development.
+            Bulding a modular inbox to help dealmakers organize and move quickly in a zoom-powered world.
           </div>
         </div>
         <div class="mt-4">
@@ -29,7 +28,7 @@
         </div>
         <div class="mt-4">
           <div class="text-xl relative">
-            <span class="font-bold">Purdue University</span> - <span class="font-light italic">Comupter Engineering & Philosophy</span>
+            <span class="font-bold">Purdue University (on leave)</span> - <span class="font-light italic">Comupter Engineering & Philosophy</span>
             <div class="float-right text-sm pr-2">
               class 2024
             </div>

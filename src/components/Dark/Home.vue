@@ -10,19 +10,22 @@
         </h1>
 
         <div class="text-2xl pb-4">
-          I'm manifesting a cs student with healthy work life balance
+          I left school to build <span class="italic">personal</span> software.
         </div>
 
         <div class=" text-2xl">
           Currently:
         </div>
-
         <div class="text-lg pl-4">
-          🏗️ building a workspace for people who work with people
-          <a class="underline italic bold cursor-pointer" href="https://kryx.co">@ kryx.co</a>
+          🏗️ building the office of the future
+          <a class="underline italic bold cursor-pointer" href="https://tryvelocity.xyz">@ velocity</a>
           <br>
-          🎨 exploring web3
-          <a class="underline italic bold cursor-pointer" href="https://twitter.com/developer_dao">@ developer dao</a>
+          🎉 growing Purdue's startup community <a class="underline italic bold cursor-pointer" href="https://www.anvilstartups.com/">@ the anvil</a>.
+          <br>
+          🛠 organizing Purdue's largest hackathon <a class="underline italic bold cursor-pointer" href="https://boilermake.org//">@ boilermake</a>.
+          <br>
+          🧱 vibing with
+          <a class="underline italic bold cursor-pointer" href="https://twitter.com/developer_dao">@ developer dao</a> & a few other web3 communities...
           <br>
         </div>
 
